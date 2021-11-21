@@ -27,6 +27,7 @@ about:
   license: Apache-2.0
   license_file: LICENSE
   summary: Apache Ant is a Java library and command-line tool that mainly helps building software.
+  dev_url: https://github.com/apache/ant
 
 extra:
   recipe-maintainers:
