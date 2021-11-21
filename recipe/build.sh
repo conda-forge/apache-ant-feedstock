@@ -1,5 +1,7 @@
 #!/bin/bash
 
+set -ex
+
 export ANT_HOME="${PREFIX}"
 
 for i in etc lib bin; do
