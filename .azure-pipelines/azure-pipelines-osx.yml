@@ -8,8 +8,11 @@ jobs:
     vmImage: macOS-10.15
   strategy:
     matrix:
-      osx_64_:
-        CONFIG: osx_64_
+      osx_64_openjdk11:
+        CONFIG: osx_64_openjdk11
+        UPLOAD_PACKAGES: 'True'
+      osx_64_openjdk8:
+        CONFIG: osx_64_openjdk8
         UPLOAD_PACKAGES: 'True'
   timeoutInMinutes: 360
 
