@@ -1,5 +1,6 @@
+@echo on
 
-call build.bat dist
+call build.bat install-lite
 if errorlevel 1 exit 1
 
 cd apache-ant-%PKG_VERSION%

@@ -1,6 +1,6 @@
 #!/bin/bash
 
-./build.sh dist
+./build.sh install-lite
 cd apache-ant-${PKG_VERSION}
 
 for i in etc lib bin; do
