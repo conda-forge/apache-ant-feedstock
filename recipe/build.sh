@@ -8,10 +8,14 @@ for i in etc lib bin; do
   mkdir -p "${PREFIX}/$i"
 done
 
-# on osx, the build fails with chmod/permission errors without this
-# option, which has been renamed in source, but not in the docs, see
-# https://github.com/apache/ant/commit/c7d9b17b080fc5250fc05144322ecc3eef8a6e87
-./build.sh install-lite -Dsetpermissions.fail=false
+if [[ "${target_platform}" == linux-* ]]; then
+    ./build.sh install-lite
+else
+    # on osx, the build fails with chmod/permission errors without this
+    # option, which has been renamed in source, but not in the docs, see
+    # https://github.com/apache/ant/commit/c7d9b17b080fc5250fc05144322ecc3eef8a6e87
+    ./build.sh install-lite -Dsetpermissions.fail=false
+fi
 
 # ensure that ANT_HOME is set correctly
 mkdir -p $PREFIX/etc/conda/activate.d
