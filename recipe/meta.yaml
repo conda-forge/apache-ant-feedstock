@@ -1,14 +1,12 @@
-{% set name = "apache-ant" %}
 {% set version = "1.10.12" %}
-{% set sha256 = "0d10dc97031882ccdcadf47163a5ee9bc4f0104a694a1399c2eda1b93f9a739b" %}
 
 package:
-  name: {{ name|lower }}
+  name: apache-ant
   version: {{ version }}
 
 source:
-  url: https://archive.apache.org/dist/ant/source/{{ name }}-{{ version }}-src.tar.gz
-  sha256: {{ sha256 }}
+  url: https://archive.apache.org/dist/ant/source/apache-ant-{{ version }}-src.tar.gz
+  sha256: 0d10dc97031882ccdcadf47163a5ee9bc4f0104a694a1399c2eda1b93f9a739b
 
 build:
   number: 0
