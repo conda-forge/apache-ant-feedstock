@@ -150,4 +150,5 @@ Feedstock Maintainers
 =====================
 
 * [@ThejashwiniSwamy](https://github.com/ThejashwiniSwamy/)
+* [@h-vetinari](https://github.com/h-vetinari/)
 
