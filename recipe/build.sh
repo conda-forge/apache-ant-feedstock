@@ -8,7 +8,7 @@ for i in etc lib bin; do
   mkdir -p "${PREFIX}/$i"
 done
 
-./build.sh install-lite -Dchmod.fail=false
+./build.sh install-lite -Dsetpermissions.fail=false
 
 # ensure that ANT_HOME is set correctly
 mkdir -p $PREFIX/etc/conda/activate.d
