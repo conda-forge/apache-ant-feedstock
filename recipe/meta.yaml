@@ -1,7 +1,7 @@
 {% set version = "1.10.12" %}
 
 package:
-  name: apache-ant
+  name: ant-split
   version: {{ version }}
 
 source:
@@ -17,10 +17,31 @@ requirements:
   run:
     - openjdk
 
-test:
-  commands:
-    - ant -help
-    - ant -version
+outputs:
+  - name: apache-ant
+    script: build-pkg.sh   # [not win]
+    script: build-pkg.bat  # [win]
+    requirements:
+      host:
+        - openjdk
+      run:
+        - openjdk
+    test:
+      commands:
+        - ant -help
+        - ant -version
+
+  # compatibility output for naming of package in defaults channel
+  - name: ant
+    requirements:
+      host:
+        - {{ pin_subpackage('apache-ant', exact=True) }}
+      run:
+        - {{ pin_subpackage('apache-ant', exact=True) }}
+    test:
+      commands:
+        - ant -help
+        - ant -version
 
 about:
   home: https://ant.apache.org/
@@ -33,3 +54,4 @@ extra:
   recipe-maintainers:
     - ThejashwiniSwamy
     - h-vetinari
+  feedstock-name: apache-ant
