@@ -83,6 +83,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ant-green.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-apache--ant-green.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) |
 
 Installing apache-ant
@@ -95,16 +96,16 @@ conda config --add channels conda-forge
 conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `apache-ant` can be installed with:
+Once the `conda-forge` channel has been enabled, `ant, apache-ant` can be installed with:
 
 ```
-conda install apache-ant
+conda install ant apache-ant
 ```
 
-It is possible to list all of the versions of `apache-ant` available on your platform with:
+It is possible to list all of the versions of `ant` available on your platform with:
 
 ```
-conda search apache-ant --channel conda-forge
+conda search ant --channel conda-forge
 ```
 
 
