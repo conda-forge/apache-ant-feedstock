@@ -9,6 +9,8 @@ Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-ant-feed
 
 Summary: Apache Ant is a Java library and command-line tool that mainly helps building software.
 
+Development: https://github.com/apache/ant
+
 Current build status
 ====================
 
@@ -27,24 +29,45 @@ Current build status
         <table>
           <thead><tr><th>Variant</th><th>Status</th></tr></thead>
           <tbody><tr>
-              <td>linux_64</td>
+              <td>linux_64_openjdk11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=linux&configuration=linux_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=linux&configuration=linux_64_openjdk11" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>osx_64</td>
+              <td>linux_64_openjdk8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=osx&configuration=osx_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=linux&configuration=linux_64_openjdk8" alt="variant">
                 </a>
               </td>
             </tr><tr>
-              <td>win_64</td>
+              <td>osx_64_openjdk11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
-                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=win&configuration=win_64_" alt="variant">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=osx&configuration=osx_64_openjdk11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_64_openjdk8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=osx&configuration=osx_64_openjdk8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_openjdk11</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=win&configuration=win_64_openjdk11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_openjdk8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=master">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=master&jobName=win&configuration=win_64_openjdk8" alt="variant">
                 </a>
               </td>
             </tr>
@@ -60,6 +83,7 @@ Current release info
 
 | Name | Downloads | Version | Platforms |
 | --- | --- | --- | --- |
+| [![Conda Recipe](https://img.shields.io/badge/recipe-ant-green.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/ant.svg)](https://anaconda.org/conda-forge/ant) |
 | [![Conda Recipe](https://img.shields.io/badge/recipe-apache--ant-green.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Downloads](https://img.shields.io/conda/dn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Version](https://img.shields.io/conda/vn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) | [![Conda Platforms](https://img.shields.io/conda/pn/conda-forge/apache-ant.svg)](https://anaconda.org/conda-forge/apache-ant) |
 
 Installing apache-ant
@@ -69,25 +93,27 @@ Installing `apache-ant` from the `conda-forge` channel can be achieved by adding
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
-Once the `conda-forge` channel has been enabled, `apache-ant` can be installed with:
+Once the `conda-forge` channel has been enabled, `ant, apache-ant` can be installed with:
 
 ```
-conda install apache-ant
+conda install ant apache-ant
 ```
 
-It is possible to list all of the versions of `apache-ant` available on your platform with:
+It is possible to list all of the versions of `ant` available on your platform with:
 
 ```
-conda search apache-ant --channel conda-forge
+conda search ant --channel conda-forge
 ```
 
 
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -148,4 +174,5 @@ Feedstock Maintainers
 =====================
 
 * [@ThejashwiniSwamy](https://github.com/ThejashwiniSwamy/)
+* [@h-vetinari](https://github.com/h-vetinari/)
 
