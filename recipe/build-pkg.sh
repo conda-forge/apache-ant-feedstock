@@ -15,9 +15,6 @@ else
     # option, which has been renamed in source, but not in the docs, see
     # https://github.com/apache/ant/commit/c7d9b17b080fc5250fc05144322ecc3eef8a6e87
     ./build.sh install-lite -Dsetpermissions.fail=false
-    # make sure things are executable, inspired by
-    # https://github.com/AnacondaRecipes/aggregate/blob/master/ant-feedstock/recipe/meta.yaml#L24
-    chmod +x $PREFIX/bin/j*
 fi
 
 # ensure that ANT_HOME is set correctly

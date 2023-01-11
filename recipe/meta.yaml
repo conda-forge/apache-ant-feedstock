@@ -1,4 +1,4 @@
-{% set version = "1.10.12" %}
+{% set version = "1.10.13" %}
 
 package:
   name: ant-split
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://archive.apache.org/dist/ant/source/apache-ant-{{ version }}-src.tar.gz
-  sha256: 0d10dc97031882ccdcadf47163a5ee9bc4f0104a694a1399c2eda1b93f9a739b
+  sha256: da006f4c888d41d0f3f213565e48aeff73e4d8a6196e494121d8da1e567a8406
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
@@ -19,7 +19,7 @@ requirements:
 
 outputs:
   - name: ant
-    script: build-pkg.sh   # [not win]
+    script: build-pkg.sh  # [not win]
     script: build-pkg.bat  # [win]
     requirements:
       host:
