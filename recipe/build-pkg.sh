@@ -10,6 +10,9 @@ done
 
 if [[ "${target_platform}" == linux-* ]]; then
     ./build.sh install-lite
+elif [[ "${target_platform}" == "osx-arm64" ]]; then
+    export JAVAC=$BUILD_PREFIX/bin/javac
+    ./build.sh install-lite
 else
     # on osx, the build fails with chmod/permission errors without this
     # option, which has been renamed in source, but not in the docs, see

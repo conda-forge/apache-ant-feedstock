@@ -1,11 +1,11 @@
-About apache-ant
-================
+About apache-ant-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-ant-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ant.apache.org/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-ant-feedstock/blob/main/LICENSE.txt)
 
 Summary: Apache Ant is a Java library and command-line tool that mainly helps building software.
 
@@ -36,6 +36,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>linux_64_openjdk17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=linux&configuration=linux%20linux_64_openjdk17" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>linux_64_openjdk8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
@@ -50,6 +57,13 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_64_openjdk17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_64_openjdk17" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>osx_64_openjdk8</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
@@ -57,10 +71,38 @@ Current build status
                 </a>
               </td>
             </tr><tr>
+              <td>osx_arm64_openjdk11</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_openjdk11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_openjdk17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_openjdk17" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>osx_arm64_openjdk8</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=osx&configuration=osx%20osx_arm64_openjdk8" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
               <td>win_64_openjdk11</td>
               <td>
                 <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
                   <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=win&configuration=win%20win_64_openjdk11" alt="variant">
+                </a>
+              </td>
+            </tr><tr>
+              <td>win_64_openjdk17</td>
+              <td>
+                <a href="https://dev.azure.com/conda-forge/feedstock-builds/_build/latest?definitionId=12324&branchName=main">
+                  <img src="https://dev.azure.com/conda-forge/feedstock-builds/_apis/build/status/apache-ant-feedstock?branchName=main&jobName=win&configuration=win%20win_64_openjdk17" alt="variant">
                 </a>
               </td>
             </tr><tr>
