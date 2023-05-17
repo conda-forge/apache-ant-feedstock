@@ -11,11 +11,17 @@ jobs:
       osx_64_openjdk11:
         CONFIG: osx_64_openjdk11
         UPLOAD_PACKAGES: 'True'
+      osx_64_openjdk17:
+        CONFIG: osx_64_openjdk17
+        UPLOAD_PACKAGES: 'True'
       osx_64_openjdk8:
         CONFIG: osx_64_openjdk8
         UPLOAD_PACKAGES: 'True'
       osx_arm64_openjdk11:
         CONFIG: osx_arm64_openjdk11
+        UPLOAD_PACKAGES: 'True'
+      osx_arm64_openjdk17:
+        CONFIG: osx_arm64_openjdk17
         UPLOAD_PACKAGES: 'True'
       osx_arm64_openjdk8:
         CONFIG: osx_arm64_openjdk8

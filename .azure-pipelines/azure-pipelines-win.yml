@@ -11,6 +11,9 @@ jobs:
       win_64_openjdk11:
         CONFIG: win_64_openjdk11
         UPLOAD_PACKAGES: 'True'
+      win_64_openjdk17:
+        CONFIG: win_64_openjdk17
+        UPLOAD_PACKAGES: 'True'
       win_64_openjdk8:
         CONFIG: win_64_openjdk8
         UPLOAD_PACKAGES: 'True'
