@@ -12,6 +12,8 @@ build:
   number: 0
 
 requirements:
+  build:
+    - openjdk  # [build_platform != target_platform]
   host:
     - openjdk
   run:
