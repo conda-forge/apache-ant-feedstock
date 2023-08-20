@@ -1,11 +1,11 @@
-About apache-ant
-================
+About apache-ant-feedstock
+==========================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-ant-feedstock/blob/main/LICENSE.txt)
 
 Home: https://ant.apache.org/
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/apache-ant-feedstock/blob/main/LICENSE.txt)
 
 Summary: Apache Ant is a Java library and command-line tool that mainly helps building software.
 
