@@ -12,6 +12,14 @@ jobs:
         CONFIG: linux_64_openjdk11
         UPLOAD_PACKAGES: 'True'
         DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk17:
+        CONFIG: linux_64_openjdk17
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
+      linux_64_openjdk21:
+        CONFIG: linux_64_openjdk21
+        UPLOAD_PACKAGES: 'True'
+        DOCKER_IMAGE: quay.io/condaforge/linux-anvil-cos7-x86_64
       linux_64_openjdk8:
         CONFIG: linux_64_openjdk8
         UPLOAD_PACKAGES: 'True'
