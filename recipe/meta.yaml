@@ -9,13 +9,13 @@ source:
   sha256: 9a5fe31f44d1eb62590cbe38e4fab25b25e2f68643b38a54b66498e0bf621b54
 
 build:
-  number: 1
+  number: 2
 
 requirements:
   host:
-    - openjdk
+    - openjdk >=8
   run:
-    - openjdk
+    - openjdk >=8
 
 outputs:
   - name: ant
@@ -23,9 +23,9 @@ outputs:
     script: build-pkg.bat  # [win]
     requirements:
       host:
-        - openjdk
+        - openjdk >=8
       run:
-        - openjdk
+        - openjdk >=8
     test:
       commands:
         - ant -help
