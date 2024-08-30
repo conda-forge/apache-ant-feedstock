@@ -1,4 +1,4 @@
-{% set version = "1.10.14" %}
+{% set version = "1.10.15" %}
 
 package:
   name: ant-split
@@ -6,10 +6,10 @@ package:
 
 source:
   url: https://archive.apache.org/dist/ant/source/apache-ant-{{ version }}-src.tar.gz
-  sha256: 9a5fe31f44d1eb62590cbe38e4fab25b25e2f68643b38a54b66498e0bf621b54
+  sha256: a22b495b9c05482841f919d3440d2b38213ae223e039859b73aabcde444199b1
 
 build:
-  number: 1
+  number: 0
 
 requirements:
   host:
