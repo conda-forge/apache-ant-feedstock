@@ -1,57 +1,55 @@
-{% set version = "1.10.15" %}
+context:
+  version: "1.10.15"
 
-package:
-  name: ant-split
-  version: {{ version }}
+recipe:
+  name: ant
+  version: ${{ version }}
 
 source:
-  url: https://archive.apache.org/dist/ant/source/apache-ant-{{ version }}-src.tar.gz
+  url: https://archive.apache.org/dist/ant/source/apache-ant-${{ version }}-src.tar.gz
   sha256: a22b495b9c05482841f919d3440d2b38213ae223e039859b73aabcde444199b1
 
 build:
-  number: 1
-
-requirements:
-  host:
-    - openjdk >=8
-  run:
-    - openjdk >=8
+  number: 2
 
 outputs:
-  - name: ant
-    script: build-pkg.sh  # [not win]
-    script: build-pkg.bat  # [win]
+  - package:
+      name: ant
+    build:
+      script: build-pkg
     requirements:
-      host:
+      build:
         - openjdk >=8
       run:
         - openjdk >=8
-    test:
-      commands:
+    tests:
+      - script:
         - ant -help
         - ant -version
 
   # compatibility output for previous name of package in conda-forge
-  - name: apache-ant
+  - package:
+      name: apache-ant
     build:
       noarch: generic
     requirements:
       run:
-        - {{ pin_subpackage('ant', exact=True) }}
-    test:
-      commands:
+        - ${{ pin_subpackage('ant', exact=true) }}
+    tests:
+      - script:
         - ant -help
         - ant -version
 
 about:
-  home: https://ant.apache.org/
+  homepage: https://ant.apache.org/
   license: Apache-2.0
   license_file: LICENSE
   summary: Apache Ant is a Java library and command-line tool that mainly helps building software.
-  dev_url: https://github.com/apache/ant
+  repository: https://github.com/apache/ant
 
 extra:
   recipe-maintainers:
     - ThejashwiniSwamy
     - h-vetinari
+    - wolfv
   feedstock-name: apache-ant
