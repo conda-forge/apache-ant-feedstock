@@ -24,8 +24,8 @@ outputs:
         - openjdk >=8
     tests:
       - script:
-        - ant -help
-        - ant -version
+          - ant -help
+          - ant -version
 
   # compatibility output for previous name of package in conda-forge
   - package:
@@ -37,8 +37,8 @@ outputs:
         - ${{ pin_subpackage('ant', exact=true) }}
     tests:
       - script:
-        - ant -help
-        - ant -version
+          - ant -help
+          - ant -version
 
 about:
   homepage: https://ant.apache.org/
