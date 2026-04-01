@@ -1,5 +1,5 @@
 context:
-  version: "1.10.15"
+  version: "1.10.16"
 
 recipe:
   name: ant
@@ -7,10 +7,10 @@ recipe:
 
 source:
   url: https://archive.apache.org/dist/ant/source/apache-ant-${{ version }}-src.tar.gz
-  sha256: a22b495b9c05482841f919d3440d2b38213ae223e039859b73aabcde444199b1
+  sha256: 7d9a43bf46054275db3aa61c0ca6dfa25202d11e3c2b061ce6e67586e8d785fa
 
 build:
-  number: 2
+  number: 0
 
 outputs:
   - package:
@@ -24,8 +24,8 @@ outputs:
         - openjdk >=8
     tests:
       - script:
-        - ant -help
-        - ant -version
+          - ant -help
+          - ant -version
 
   # compatibility output for previous name of package in conda-forge
   - package:
@@ -37,8 +37,8 @@ outputs:
         - ${{ pin_subpackage('ant', exact=true) }}
     tests:
       - script:
-        - ant -help
-        - ant -version
+          - ant -help
+          - ant -version
 
 about:
   homepage: https://ant.apache.org/
