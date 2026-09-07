@@ -1,5 +1,5 @@
 context:
-  version: "1.10.16"
+  version: "1.10.18"
 
 recipe:
   name: ant
@@ -7,7 +7,7 @@ recipe:
 
 source:
   url: https://archive.apache.org/dist/ant/source/apache-ant-${{ version }}-src.tar.gz
-  sha256: 7d9a43bf46054275db3aa61c0ca6dfa25202d11e3c2b061ce6e67586e8d785fa
+  sha256: a615c40df1812ddc2d7ab864b04aff4a02703a4c2da65b92fbf40b940129db33
 
 build:
   number: 0
